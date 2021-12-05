@@ -21,13 +21,13 @@ public class Fibonacci {
          */
         System.out.print("Chiều dài fibonacci:");
         int n = scanner.nextInt();
-        int t = 1;
-        int s = 0;
+        int soThuNhat = 1;
+        int soThuHai = 0;
         for (int i=1; i <=n; i++ ) {
-            int a = s;
-            s = s + t;
-            t = a;
-            System.out.print(s + ", ");
+            int soThuBa = soThuHai;
+            soThuHai = soThuHai + soThuNhat;
+            soThuNhat = soThuBa;
+            System.out.print(soThuHai + ", ");
         }
     }
 }
